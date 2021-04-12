@@ -4,9 +4,8 @@ import java.io.IOException;
 public class Test {
 
     public static void main(String[] args) throws IOException {
-        String dir = "ExampleUser/Desktop/Albums/Example-Album";
+        String dir = "";
 
-        // If there are arguments change default dir
         if (args.length > 0) {
             dir = args[0];
             System.out.println(dir);
@@ -29,6 +28,7 @@ public class Test {
 
             if (directory.isDirectory()) {
                 // Rename the directory with whatever naming system you use
+                // "namingSystem" is whatever word your directories start with
                 String newDirectoryName = directoryFinder.rename(directory, "");
 
                 ImageRenamer imageRenamer = new ImageRenamer();
