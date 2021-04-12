@@ -15,9 +15,8 @@ File[] directories = directoryFinder.find(directory);
 // Go through all the folders in that directory
 for(File directory : directories) {
   if (directory.isDirectory()) {
-  
       /* The first parameter is the current directory it will rename. 
-      The Second is the common name among the files. (For instance if the folders are named "page1.png" and "page2.png" the common name would be "page")
+      The Second is the common name among the files. (For instance if the folders are named "album1" and "album2" the common name would be "album")
       */
       String newDirectoryName = directoryFinder.rename(directory, "page");
       
